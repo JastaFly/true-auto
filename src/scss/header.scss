@@ -1,0 +1,50 @@
+.logo {
+  background-color: #FFFFFF;
+  border-radius: 0 16px 16px 0px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 8.5%;
+  &__img {
+    width: 139px;
+    height: 42px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  & a {
+    font-family: GothamProBold;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 5%;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+.number {
+  font-family: GothamProBold;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: right;
+}
+.whatapp {
+  display: flex;
+  &__img {
+    width: 29px;
+    height: 28px;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+  &__number {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: GothamProBold;
+  }
+  &__text {
+    font-family: GothamPro;
+    color: #8DC63F;
+    font-size: 12px;
+  }
+}

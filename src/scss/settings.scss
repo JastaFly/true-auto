@@ -1,0 +1,45 @@
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro.ttf);
+}
+@font-face {
+  font-family: GothamProBold;
+  src: url(../fonts/GothamPro-Bold.ttf);
+}
+header {
+  background-image: url("../img/main-car.jpg");
+  padding-top: 2%;
+  & a:hover {
+    color: #FFFFFF;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.row {
+  &_ver-center {
+    align-items: center;
+  }
+  &_gor-between {
+    justify-content: space-between;
+  }
+}
+.green-button {
+  color: #FFFFFF;
+  font-family: GothamProBold;
+  font-size: 12px;
+  background: #8DC63F;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  cursor: pointer;
+  border: 1px solid #8DC63F;
+  transition: 0.5s;
+  &:hover {
+    color: #8DC63F;
+    background-color: rgba(141, 198, 63, 0);
+  }
+}
