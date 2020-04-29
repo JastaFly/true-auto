@@ -2,30 +2,90 @@
   font-family: GothamPro;
   src: url(../fonts/GothamPro.ttf);
 }
+
 @font-face {
   font-family: GothamProBold;
   src: url(../fonts/GothamPro-Bold.ttf);
 }
+
 header {
   background-image: url("../img/main-car.jpg");
   padding-top: 2%;
+
   & a:hover {
     color: #FFFFFF;
   }
 }
+
+body {
+  background-color: #F8F8F8;
+}
+
+h1 {
+  font-size: 64px;
+  width: 45%;
+  text-transform: uppercase;
+  padding-top: 5%;
+  font-family: GothamProBold;
+  padding-bottom: 1%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: GothamProBold;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+h3 {
+  font-family: GothamProBold;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #8DC63F;
+  padding-bottom: 3%;
+}
+
 a {
   &:hover {
     text-decoration: none;
   }
 }
+
+input {
+  border-radius: 10px;
+  border: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  outline: none;
+  padding-left: 5%;
+
+  &::placeholder {
+    color: #6D6E71;
+    font-family: GothamPro;
+    font-size: 14px;
+  }
+}
+
 .row {
   &_ver-center {
     align-items: center;
   }
-  &_gor-between {
-    justify-content: space-between;
+
+  &_gor {
+    &-between {
+      justify-content: space-between;
+    }
+    &-around {
+      justify-content: space-around;
+    }
+  }
+
+  &_center {
+    justify-content: center;
   }
 }
+
 .green-button {
   color: #FFFFFF;
   font-family: GothamProBold;
@@ -38,8 +98,26 @@ a {
   cursor: pointer;
   border: 1px solid #8DC63F;
   transition: 0.5s;
+
   &:hover {
     color: #8DC63F;
+    background-color: rgba(141, 198, 63, 0);
+  }
+}
+
+.white-button {
+  background-color: #FFFFFF;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-family: GothamProBold;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    color: #FFFFFF;
     background-color: rgba(141, 198, 63, 0);
   }
 }

@@ -48,3 +48,52 @@ nav {
     font-size: 12px;
   }
 }
+.offer {
+  padding-left: 8.5%;
+  &__text {
+    font-family: GothamPro;
+    font-size: 24px;
+    width: 35%;
+    padding-bottom: 6%;
+  }
+  & .form {
+    padding-bottom: 5%;
+  }
+}
+.form {
+  width: 33%;
+  &__row {
+    display: flex;
+    margin-bottom: 3%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-family: GothamProBold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 5%;
+    margin-bottom: 0;
+  }
+  &__mini-text {
+    color: #E5E5E5;
+    font-size: 10px;
+    font-family: GothamPro;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: GothamPro;
+    color: #FFFFFF;
+    width: 50%;
+    text-align: right;
+    margin-bottom: 0;
+  }
+  input {
+    width: 50%;
+    &[type="text"] {
+      margin-right: 5%;
+    }
+  }
+}

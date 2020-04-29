@@ -19,7 +19,7 @@ if (!empty($_POST)) {
             $mail->CharSet = "UTF-8";
             $mail->SMTPAuth = true;
 
-            // Настройки вашей почты
+            // Настройки почты
             $mail->Host = 'smtp.yandex.ru';
             $mail->Username = 'smtp_example@mail.ru';
             $mail->Password = 'super_secret_password';
