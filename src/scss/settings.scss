@@ -8,6 +8,12 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+@font-face {
+  font-family: GeometriaBold;
+  src: url(../fonts/Geometria-Bold.ttf);
+}
+
+
 header {
   background-image: url("../img/main-car.jpg");
   padding-top: 2%;
@@ -38,6 +44,7 @@ h2 {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
 h3 {
   font-family: GothamProBold;
   text-transform: uppercase;
@@ -76,6 +83,7 @@ input {
     &-between {
       justify-content: space-between;
     }
+
     &-around {
       justify-content: space-around;
     }
@@ -83,6 +91,21 @@ input {
 
   &_center {
     justify-content: center;
+  }
+
+  &_car-soul {
+    padding-bottom: 23%;
+  }
+  &_right-end {
+    justify-content: flex-end;
+  }
+  &_left-end {
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  &_padding-top {
+    padding-top: 8%;
   }
 }
 
@@ -98,6 +121,9 @@ input {
   cursor: pointer;
   border: 1px solid #8DC63F;
   transition: 0.5s;
+  &_mini-font {
+    font-family: GothamPro;
+  }
 
   &:hover {
     color: #8DC63F;
@@ -119,5 +145,32 @@ input {
   &:hover {
     color: #FFFFFF;
     background-color: rgba(141, 198, 63, 0);
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #8DC63F;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  height: 16px;
+  width: 16px;
+  background-color: #E5E5E5;
+}
+.owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+.geometry {
+  font-family: GeometriaBold;
+}
+.container {
+  &_padding-side {
+    padding-left: 15%;
+    padding-right: 20%;
+  }
+}
+.col-xl-5 {
+  & h2 {
+    text-align: left;
   }
 }

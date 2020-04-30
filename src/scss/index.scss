@@ -4,6 +4,7 @@
   border-radius: 20px;
   box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
   margin-bottom: 5%;
+  margin-top: 3%;
   &:last-child {
     margin-right: 0;
   }
@@ -115,6 +116,8 @@
     font-family: GothamPro;
     font-size: 18px;
     text-align: justify;
+    color: black;
+    line-height: 100%;
   }
   &__mini-title {
     color: #8DC63F;
@@ -122,12 +125,41 @@
     font-size: 18px;
     text-transform: uppercase;
     padding-top: 3%;
+    padding-bottom: 20%;
+    &_big {
+      font-size: 24px;
+      padding-bottom: 1%;
+    }
+  }
+  &_left-padding {
+    padding-left: 0;
+  }
+  & .green-bg {
+    padding-left: 15%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+  }
+  & .green-button {
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 }
 .image {
   display: flex;
   align-items: center;
+  & img {
+    border-radius: 0px 24px 24px 24px;
+  }
   &__item {
+    &:first-child img {
+      border-radius: 24px 24px 0px 24px;
+    }
+    &:last-child img {
+      border-radius: 24px 0px 24px 24px;
+    }
     & img {
       max-width: 100%;
     }
@@ -141,6 +173,7 @@
   margin-left: -15px;
   margin-right: -15px;
   padding-top: 3%;
+  margin-bottom: 3%;
   & .row {
     margin-left: 0;
     margin-right: 0;
@@ -181,7 +214,8 @@
     }
   }
   &_bottom-first {
-    padding-bottom: 5%;
+    margin-top: -4%;
+    padding-bottom: 9%;
     & .green-placeholder__point {
       position: relative;
       right: 20%;
@@ -191,7 +225,7 @@
     }
   }
   &_bottom-last {
-    padding-bottom: 5%;
+    margin-top: -4%;
     & .green-placeholder__point {
       position: relative;
       left: 20%;
@@ -214,5 +248,214 @@
     border-left: 1px solid black;
     width: 1px;
     margin: 0 auto;
+  }
+}
+.slide {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  &__img {
+    padding-right: 1%;
+    flex-basis: 265%;
+    padding-bottom: 1%;
+  }
+  &__name {
+    font: {
+      family: GothamProBold;
+      size: 18px;
+    }
+  }
+  &__car {
+    color: #8DC63F;
+    padding-bottom: 1%;
+    font: {
+      family: GothamPro;
+      size: 18px;
+    }
+  }
+  &__review {
+    text-align: justify;
+    background-color: #E5E5E5;
+    border-radius: 0px 36px 36px 36px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    line-height: 100%;
+    font: {
+      family: GothamPro;
+      size: 18px;
+    }
+  }
+}
+.do {
+  &__text {
+    color: #6D6E71;
+    text-align: justify;
+    line-height: 100%;
+    font: {
+      family: GothamPro;
+      size: 18px;
+    }
+  }
+  &__price {
+    text-transform: uppercase;
+    font: {
+      family: GothamProBold;
+      size: 36px;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    &:last-child {
+      margin-top: 5%;
+    }
+    & .green-button {
+      padding-top: 3.7%;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-transform: uppercase;
+      font-size: 14px;
+      &_mini-font {
+        font-size: 14px;
+        padding-top: 1%;
+        text-transform: none;
+      }
+    }
+  }
+  &__button {
+    text-align: center;
+    color: #6D6E71;
+    border: 1px solid #6D6E71;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: #FFFFFF;
+      background-color: #6D6E71;
+    }
+    font: {
+      family: GothamPro;
+      size: 14px;
+    }
+  }
+}
+.long-img {
+  display: flex;
+  align-items: center;
+  &:first-child {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  &:last-child {
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  & img {
+    max-height: 356px;
+  }
+}
+.big-img {
+  padding-right: 0;
+  & img {
+    max-width: 100%;
+  }
+}
+.digital {
+  &:nth-child(2) &__number {
+    padding-right: 7%;
+  }
+  &__number {
+    color: #8DC63F;
+    padding-right: 5%;
+    font: {
+      family: GothamProBold;
+      size: 96px;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    color: #8DC63F;
+    text-transform: uppercase;
+    font: {
+      family: GothamProBold;
+      size: 24px;
+    }
+  }
+  &__text {
+    font: {
+      family: GothamPro;
+      size: 18px;
+
+    }
+  }
+}
+.compilation {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  &__name {
+    color: #6D6E71;
+    text-transform: uppercase;
+    font: {
+      size: 24px;
+      family: GothamProBold;
+    }
+  }
+  &__car {
+    color: #8DC63F;
+    font: {
+      family: GothamPro;
+      size: 24px;
+    }
+  }
+  &__text {
+    line-height: 100%;
+    text-align: justify;
+    font: {
+      family: GothamPro;
+      size: 18px;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+  }
+  &__start-price {
+    color: #6D6E71;
+    font: {
+      family: GothamProBold;
+      size: 24px;
+    }
+  }
+  &__end {
+    color: #8DC63F;
+    text-transform: uppercase;
+    font: {
+      family: GothamProBold;
+      size: 24px;
+    }
+    &-price {
+      color: #8DC63F;
+      font: {
+        family: GothamProBold;
+        size: 36px;
+      }
+    }
+  }
+  &__col {
+    &:first-child {
+      padding-right: 5%;
+    }
   }
 }
