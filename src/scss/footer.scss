@@ -1,0 +1,51 @@
+.footer-form {
+  &__title {
+    font-family: GothamProBold;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: #FFFFFF;
+    font-family: GothamPro;
+    font-size: 18px;
+  }
+  &__input {
+    margin-bottom: 8%;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    &::placeholder {
+      color: #6D6E71;
+      font-family: GothamPro;
+      font-size: 18px;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: GothamPro;
+    font-size: 12px;
+    border-radius: 10px;
+    padding-left: 0;
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    transition: 0.5s;
+    &:hover {
+      background: none;
+      color: black;
+    }
+  }
+  &__mini-text {
+    color: #6D6E71;
+    font-family: GothamPro;
+    padding-left: 5%;
+    font-size: 10px;
+  }
+}

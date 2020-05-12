@@ -27,6 +27,12 @@ body {
   background-color: #F8F8F8;
 }
 
+footer {
+  margin-top: 5%;
+  background-color: #8DC63F;
+  padding-top: 3%;
+}
+
 h1 {
   font-size: 64px;
   width: 45%;
@@ -73,7 +79,40 @@ input {
     font-size: 14px;
   }
 }
-
+select {
+  display: block;
+  width: 100%;
+  color: #6D6E71;
+  font-family: GothamPro;
+  font-size: 18px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  border: none;
+  border-radius: 7px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+option {
+  cursor: pointer;
+  &:first-child {
+    display: none;
+  }
+}
+.select-container {
+  &:after {
+    content: ' ';
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    padding-top: 12px;
+    padding-left: 20px;
+    position: absolute;
+    margin-top: -15.5%;
+    margin-left: 80%;
+    pointer-events: none;
+  }
+}
 .row {
   &_ver-center {
     align-items: center;
@@ -158,6 +197,13 @@ input {
   background-color: #E5E5E5;
 }
 .owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+  color: #8DC63F;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   outline: none;
 }
 .geometry {
