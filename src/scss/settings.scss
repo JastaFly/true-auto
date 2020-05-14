@@ -17,6 +17,7 @@
 header {
   background-image: url("../img/main-car.jpg");
   padding-top: 2%;
+  background-size: cover;
 
   & a:hover {
     color: #FFFFFF;
@@ -66,17 +67,33 @@ a {
 }
 
 input {
-  border-radius: 10px;
-  border: none;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  outline: none;
-  padding-left: 5%;
+ &[type=text] {
+   border-radius: 10px;
+   border: none;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   outline: none;
+   padding-left: 5%;
 
-  &::placeholder {
-    color: #6D6E71;
-    font-family: GothamPro;
-    font-size: 14px;
+   &::placeholder {
+     color: #6D6E71;
+     font-family: GothamPro;
+     font-size: 14px;
+   }
+ }
+  &[type=tel] {
+    border-radius: 10px;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: none;
+    padding-left: 5%;
+
+    &::placeholder {
+      color: #6D6E71;
+      font-family: GothamPro;
+      font-size: 14px;
+    }
   }
 }
 select {
@@ -167,6 +184,9 @@ option {
   &:hover {
     color: #8DC63F;
     background-color: rgba(141, 198, 63, 0);
+  }
+  &_fnt-10 {
+    font-size: 10px;
   }
 }
 

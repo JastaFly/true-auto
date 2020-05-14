@@ -170,6 +170,7 @@
 }
 .car-bg {
   background-image: url("../img/car-bg.jpg");
+  background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
   padding-top: 3%;
@@ -242,6 +243,10 @@
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
+    &_bottom {
+      margin-bottom: 0;
+      margin-top: 5%;
+    }
   }
   &__line {
     height: 130px;
@@ -357,6 +362,7 @@
   }
   & img {
     max-height: 356px;
+    max-width: 100%;
   }
 }
 .big-img {
@@ -496,7 +502,101 @@
     border-radius: 36px 36px 36px 0px;
     background-color: #FFFFFF;
     position: relative;
-    right: 21%;
+    right: 17%;
     bottom: 23%;
   }
+}
+.modal-window {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  width: 450px;
+  position: fixed;
+  z-index: 4;
+  left: 40%;
+  top: 20%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  &__title {
+    text-transform: uppercase;
+    font-family: GothamProBold;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__text {
+    font-family: GothamPro;
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+  &__input {
+    display: block;
+    border: 1px solid #6D6E71 !important;
+    border-radius: 10px;
+    font-family: GothamPro;
+    font-size: 14px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 3%;
+    padding-left: 6%;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-top: 5%;
+  }
+  &__mini-text {
+    padding-top: 4%;
+    text-align: center;
+    font-family: GothamPro;
+    font-size: 10px;
+    color: #8DC63F;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+  &__cross {
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -6%;
+    cursor: pointer;
+  }
+}
+.shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 3;
+  opacity: 0.5;
+  cursor: pointer;
+  display: none;
+}
+.modal-success {
+  background-color: #8DC63F;
+  border-radius: 10px;
+  font-family: GothamProBold;
+  font-size: 24px;
+  text-align: center;
+  width: 400px;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  z-index: 5;
+  color: #FFFFFF;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: none;
 }
