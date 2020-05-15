@@ -31,11 +31,11 @@ nav {
 }
 .whatapp {
   display: flex;
+  align-items: center;
   &__img {
     width: 29px;
     height: 28px;
     margin-right: 5%;
-    margin-top: 3%;
   }
   &__number {
     font-size: 14px;
@@ -46,6 +46,7 @@ nav {
     font-family: GothamPro;
     color: #8DC63F;
     font-size: 12px;
+    margin-bottom: 0;
   }
 }
 .offer {

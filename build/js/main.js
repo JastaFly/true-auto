@@ -50,3 +50,8 @@ const close_window = function () {
     main.style.filter = 'blur(0)';
     footer.style.filter = 'blur(0)';
 }
+
+const show_nav = function () {
+    let nav = document.getElementsByTagName('nav')[0];
+    $(nav).slideToggle();
+}

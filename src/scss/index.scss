@@ -439,6 +439,7 @@
   }
   &__start-price {
     color: #6D6E71;
+    text-transform: uppercase;
     font: {
       family: GothamProBold;
       size: 24px;
@@ -598,5 +599,8 @@
   color: #FFFFFF;
   padding-top: 2%;
   padding-bottom: 2%;
+  display: none;
+}
+.ipad {
   display: none;
 }
