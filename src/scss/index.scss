@@ -512,12 +512,13 @@
   background-color: #FFFFFF;
   width: 450px;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   left: 40%;
   top: 20%;
   padding-top: 1.5%;
   padding-left: 2%;
   padding-right: 2%;
+  display: none;
   &__title {
     text-transform: uppercase;
     font-family: GothamProBold;
