@@ -400,27 +400,54 @@
     right: 3.5%;
     margin-top: -18%;
   }
-  .popcorn {
-    &__cloud {
-      font-size: 8px;
-    }
-  }
   .modal-window__cross {
     margin-left: 96%;
   }
-}
-@media screen and (max-width: 1200px) {
   nav a {
     font-size: 12px;
   }
+  .popcorn {
+    &__cloud {
+      position: absolute;
+      font-size: 14px;
+      margin-bottom: 50%;
+      margin-right: -5%;
+    }
+  }
+  .select-container:after {
+    margin-left: 73%;
+  }
+}
+@media screen and (max-width: 1232px) {
+  .whatapp__number {
+    font-size: 12px;
+  }
+  .form {
+    width: 35%;
+  }
+  .do {
+    &__container {
+      align-items: center;
+    }
+    &__price {
+      font-size: 14px;
+    }
+  }
+  .slider-two .owl-nav {
+    margin-top: -31%;
+    right: 1.2%;
+  }
+  .slider-two__count {
+    margin-top: -20.5%;
+    right: 3%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .green-button_fnt-10 {
     font-size: 6px;
   }
   .logo {
     padding-right: 14%;
-  }
-  .whatapp__number {
-    font-size: 12px;
   }
   .form__title {
     font-size: 14px;
@@ -434,14 +461,7 @@
   h3 {
     font-size: 32px;
   }
-  .do {
-    &__container {
-      align-items: center;
-    }
-    &__price {
-      font-size: 14px;
-    }
-  }
+
   .compilation {
     width: 95%;
   }
@@ -452,14 +472,7 @@
     right: 1%;
     margin-top: -17.5%;
   }
-  .popcorn {
-    &__cloud {
-      position: absolute;
-      font-size: 14px;
-      margin-bottom: 50%;
-      margin-right: -5%;
-    }
-  }
+
   .select-container:after {
     margin-left: 70%;
     margin-top: -18%;

@@ -24,10 +24,10 @@
                 </svg>
             </div>
             <nav class="col-xl-5 col-lg-5 order-sm-2">
-                <a href="">О нас</a>
-                <a href="">Отзывы</a>
-                <a href="">Проверка авто</a>
-                <a href="">Стоимость</a>
+                <a href="#about_us">О нас</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#check">Проверка авто</a>
+                <a href="#service">Стоимость</a>
                 <a href="">Контакты</a>
                 <p class="green-button ipad">обратный звнок</p>
                 <a href="tel:+78005502887" class="green-number ipad">8 800 550 28 87</a>
@@ -42,10 +42,9 @@
             </nav>
             <a href="tel:+78005502887" class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-6 order-5 order-sm-3 number">8 800
                 550 28 87</a>
-            <div onclick="show_window(0)"
+            <div onclick="show_window(0); what_fn(1, 1)"
                  class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-4 order-4 order-sm-4 green-button green-button_fnt-10 mobile-none">
-                обратный
-                звонок
+                обратный звонок
             </div>
             <div class="whatapp col-xl-2 col-lg-2 col-md-3 col-sm-3 col-6 order-6 order-sm-5">
                 <svg class="whatapp__img" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,15 +68,15 @@
             <h1>Покупаете поддержанный автомобиль?</h1>
             <p class="offer__text">Мы подберем для вас лучшее предложение на рынке с гарантией технической и юридической
                 чистоты</p>
-            <form action="" onsubmit="return false;" class="form">
+            <form action="" onsubmit="what_fn(2, 0, this); return false;" class="form">
                 <input type="hidden" name="what">
                 <div class="form__row">
                     <p class="form__title">Оставьте заявку</p>
                     <p class="form__text">И мы подберем для вас лучший автомобиль</p>
                 </div>
                 <div class="form__row">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Телефон" required>
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="tel" name="telephone" placeholder="Телефон" required>
                 </div>
                 <div class="form__row">
                     <p class="form__mini-text">нажимая на кнопку, вы даете согласие на обработку своих персональных

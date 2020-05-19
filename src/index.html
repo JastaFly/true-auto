@@ -16,7 +16,7 @@
 
 <div class="container-fluid">
     <main>
-        <h2>Результаты нашей работы</h2>
+        <h2 id="about_us">Результаты нашей работы</h2>
         <div class="row row_center">
             <div class="tile col-xl-2 col-lg-2 col-md-5 col-sm-5">
                 <div class="tile__green-circle">
@@ -113,7 +113,7 @@
         </div>
         <div class="row row_center row_ver-center green-bg mobile-none">
             <h2 class="col-xl-4 col-lg-4 col-md-6 col-sm-6">приобрести лучший автомобиль всего за 1 клик</h2>
-            <form action="" onsubmit="return false;" class="col-xl-4 col-md-6 col-sm-6 form">
+            <form action="" onsubmit="what_fn(3, 0, this); return false;" class="col-xl-4 col-md-6 col-sm-6 form">
                 <input type="hidden" name="what">
                 <div class="form__row">
                     <input type="text" placeholder="Имя">
@@ -368,10 +368,10 @@
         </div>
         <div class="car-bg mobile-none">
             <div class="row row_center">
-                <h2 class="col-xl-3 col-lg-4 col-md-3 col-sm-3 car-title">Как мы проверяем</h2>
+                <h2 id="check" class="col-xl-3 col-lg-4 col-md-3 col-sm-3 car-title">Как мы проверяем</h2>
                 <span class="text__description col-xl-4 col-lg-4 col-md-7 col-sm-7 ">Проверка и диагностика авто одна из самых важных частей покупки и продажи любого автомобиля</span>
                 <div class="col-xl-4 col-lg-3">
-                    <span class="white-button">Заказать диагностику</span>
+                    <span onclick="show_window(0); what_fn(4, 1);" class="white-button">Заказать диагностику</span>
                 </div>
             </div>
             <div class="row row_center row_car-soul">
@@ -419,7 +419,7 @@
                 </div>
             </div>
         </div>
-        <h2>Отзывы наших клиентов</h2>
+        <h2 id="reviews">Отзывы наших клиентов</h2>
         <div class="owl-carousel owl-theme slider">
             <div class="slide">
                 <div class="slide__img">
@@ -522,7 +522,7 @@
                 </div>
             </div>
         </div>
-        <h2>Наши услуги</h2>
+        <h2 id="service">Наши услуги</h2>
         <div class="row row_right-end">
             <div class="do col-xl-3 col-lg-6">
                 <h3>Выездная диагностика</h3>
@@ -532,7 +532,7 @@
                     по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
                 <div class="do__container">
                     <span class="do__price">От 2000 <span class="geometry">₽</span></span>
-                    <span class="green-button green-button_pad-top">Заказать услугу</span>
+                    <span onclick="show_window(0); what_fn(5, 1);" class="green-button green-button_pad-top">Заказать услугу</span>
                 </div>
             </div>
             <div class="long-img col-xl-8 col-lg-6 order-md-first order-first order-lg-last">
@@ -550,12 +550,12 @@
                 <p class="do__text">В частности, глубокий уровень погружения позволяет выполнить важные задания по
                     разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
                 <div class="do__container">
-                    <span class="green-button green-button_mini-font">По Пензенской области</span>
-                    <span class="do__button">По России</span>
+                    <span onclick="show_window(0); what_fn(6, 1);" class="green-button green-button_mini-font">По Пензенской области</span>
+                    <span onclick="show_window(0); what_fn(7, 1);" class="do__button">По России</span>
                 </div>
                 <div class="do__container">
                     <span class="do__price">От 15 000 <span class="geometry">₽</span></span>
-                    <span class="green-button green-button_pad-top">Заказать услугу</span>
+                    <span onclick="show_window(0);  what_fn(8, 1);" class="green-button green-button_pad-top">Заказать услугу</span>
                 </div>
             </div>
 
@@ -569,7 +569,7 @@
                     по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
                 <div class="do__container">
                     <span class="do__price">От 3500 <span class="geometry">₽</span></span>
-                    <span class="green-button green-button_pad-top">Заказать услугу</span>
+                    <span onclick="show_window(0); what_fn(9, 1);" class="green-button green-button_pad-top">Заказать услугу</span>
                 </div>
             </div>
             <div class="long-img col-xl-8 col-lg-6 order-md-first order-first order-lg-last">
@@ -595,7 +595,7 @@
                         поставленных задач</p>
                     <p class="text__mini-title text__mini-title_big">В среднем мы снижаем цену у продавцов от 5&nbsp;000<span
                             class="geometry">&nbsp;₽ </span>до 150&nbsp;000&nbsp;<span class="geometry">₽</span></p>
-                    <p class="green-button">помочь сбить цену</p>
+                    <p onclick="show_window(0); what_fn(10, 1);" class="green-button">помочь сбить цену</p>
                 </div>
             </div>
             <div class="big-img col-xl-6 col-lg-5">
@@ -773,7 +773,7 @@
         <p class="slider-two__count">01</p>
 
     </main>
-    <form action="" onsubmit="return false;" class="modal-window window">
+    <form action="" modal="" onsubmit="return false;" class="modal-window window">
         <input type="hidden" name="what">
         <div onclick="close_window()" class="modal-window__cross">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -783,13 +783,13 @@
         </div>
         <p class="modal-window__title">Оставьете Ваши данные</p>
         <p class="modal-window__text">И наши менеджеры перезвонят вам в ближайшее время</p>
-        <input type="text" placeholder="Имя" class="modal-window__input">
-        <input type="tel" required placeholder="Телефон" class="modal-window__input">
+        <input type="text" name="name" placeholder="Имя" class="modal-window__input">
+        <input type="tel" name="telephone" required placeholder="Телефон" class="modal-window__input">
         <input type="submit" value="позвоните мне" class="modal-window__button green-button">
         <p class="modal-window__mini-text">нажимая на кнопку, вы даете согласие на обработку своих персональных
             данных</p>
     </form>
-    <p class="modal-success window" style="display: block">Спасибо Ваша заявка отправлена</p>
+    <p class="modal-success window">Спасибо Ваша заявка отправлена</p>
     <div onclick="close_window()" class="shadow"></div>
 </div>
 

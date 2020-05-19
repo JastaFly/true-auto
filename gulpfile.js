@@ -51,6 +51,10 @@ function js() {
         .pipe(dest('./build/js'))
         .pipe(reload({stream: true}))
 }
+function php() {
+    return src('./src/php/**/*')
+        .pipe(dest('./build/php'))
+}
 
 
 const config = {
@@ -76,6 +80,7 @@ function watchAll(cb) {
     watch('./src/fonts/**/*', fonts);
     watch('./src/libs/**/*', libs);
     watch('./src/js/**/*', js);
+    watch('./src/php/**/*', php);
     cb();
 }
 
