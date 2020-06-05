@@ -169,8 +169,8 @@
     padding-right: 12%;
   }
   .square {
+    padding-top: 7%;
     &__text {
-      padding-top: 8%;
       font-size: 28px;
     }
   }
@@ -263,7 +263,6 @@
     &__text {
       font-size: 26px;
     }
-    padding-top: 6%;
   }
   .car-title {
     font-size: 26px;
@@ -321,8 +320,6 @@
   .digital__text {
     font-size: 16px;
   }
-}
-@media screen and (max-width: 1366px) {
   .popcorn {
     &__man {
       padding-top: 25%;
@@ -360,7 +357,6 @@
     font-size: 6px;
   }
   .square {
-    padding-top: 7%;
     &__text {
       font-size: 22px;
     }
@@ -441,6 +437,9 @@
     margin-top: -20.5%;
     right: 3%;
   }
+  .square {
+    padding-bottom: 7%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .green-button_fnt-10 {
@@ -453,7 +452,6 @@
     font-size: 14px;
   }
   .square {
-    padding-top: 10%;
     &__text {
       font-size: 18px;
     }
@@ -699,18 +697,11 @@
     line-height: 100%;
   }
   .square {
-    padding-top: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
     &__img {
       width: 60px;
     }
     &__text {
       font-size: 16px;
-    }
-    &__more {
-      height: 50px;
-      font-size: 14px;
     }
   }
   .text {
@@ -1132,9 +1123,10 @@
     background-position: 50% 0;
   }
   .square {
-    margin-right: 1%;
-    margin-left: 1%;
     padding-top: 20%;
+    padding-bottom: 20%;
+    margin-bottom: 7%;
+    margin-left: 1%;
     &:last-child {
       margin-right: 1%;
     }
@@ -1143,9 +1135,6 @@
     }
     &__text {
       font-size: 18px;
-    }
-    &__more {
-      margin-bottom: 10%;
     }
   }
   h3 {
