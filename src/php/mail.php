@@ -46,7 +46,7 @@ if (!empty($_POST)) {
                 // Настройки почты
                 $mail->Host = 'smtp.gmail.com';
                 $mail->Username = 'verywildweb@gmail.com';
-                $mail->Password = '';
+                $mail->Password = 'yqmsoloedytgoued';
                 $mail->SMTPSecure = 'ssl';
                 $mail->Port = 465;
                 $mail->setFrom('verywildweb@gmail.com', 'veryww.ru');
@@ -56,7 +56,7 @@ if (!empty($_POST)) {
 
                 $mail->isHTML(true);
 
-                $mail->Subject = 'Новая заявка на звонок!';
+                $mail->Subject = 'Новая заявка на TrueAuto';
                 $mail->Body = "<b>Имя:</b> $name <br>
                 <b>Тел:</b> $phone<br>
                 <b>Что хотят:</b> $what";

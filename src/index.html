@@ -546,8 +546,25 @@
                     <li>Покупка автомобиля. Постановка на учёт в ГИБДД.</li>
                 </ul>
                 <div class="do__container">
-                    <span class="do__price">От 3500 <span class="geometry">₽</span></span>
-                    <span onclick="show_window(0); what_fn(9, 1);" class="green-button green-button_pad-top">Заказать услугу</span>
+                    <span class="do__price">До 400 000 <span class="geometry">₽</span></span>
+                    <span onclick="show_window(0); what_fn(9, 1);"
+                          class="green-button green-button_pad-top">Заказать</span>
+                </div>
+                <div class="do__container">
+                    <div onclick="change_price('400 000', this)" onmouseenter="change_price_hov('400 000')"
+                         onmouseout="change_price_hov_off()" class="do__button do__button_active">20 000 р
+                    </div>
+                    <div onclick="change_price('700 000', this)" onmouseenter="change_price_hov('700 000')"
+                         onmouseout="change_price_hov_off()" class="do__button">25 000 р
+                    </div>
+                </div>
+                <div class="do__container">
+                    <div onclick="change_price('1 500 000', this)" onmouseenter="change_price_hov('1 500 000')"
+                         onmouseout="change_price_hov_off()" class="do__button">30 000 р
+                    </div>
+                    <div onclick="change_price('2 500 000', this)" onmouseenter="change_price_hov('2 500 000')"
+                         onmouseout="change_price_hov_off()" class="do__button">40 000 р
+                    </div>
                 </div>
             </div>
         </div>

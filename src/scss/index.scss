@@ -298,14 +298,15 @@
     text-transform: uppercase;
     font: {
       family: GothamProBold;
-      size: 36px;
+      size: 34px;
     }
   }
   &__container {
     display: flex;
     justify-content: space-between;
-    &:last-child {
-      margin-top: 5%;
+    padding-bottom: 5%;
+    &:first-child {
+      padding-bottom: 5%;
     }
     & .green-button {
       padding-top: 3.7%;
@@ -325,11 +326,17 @@
     color: #6D6E71;
     border: 1px solid #6D6E71;
     border-radius: 10px;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 15%;
     padding-right: 15%;
     cursor: pointer;
     transition: 0.5s;
+    &_active {
+      color: #FFFFFF;
+      background-color: #6D6E71;
+      border: 1px solid #6D6E71;
+    }
     &:hover {
       color: #FFFFFF;
       background-color: #6D6E71;

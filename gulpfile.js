@@ -75,7 +75,7 @@ function webServer(cb) {
 function watchAll(cb) {
     watch('./src/*.html', html);
     watch('./src/blocks/*.html', html);
-    watch('./src/**/*.scss', scss);
+    watch('./src/scss/*.scss', scss);
     watch('./src/img/**/*', img);
     watch('./src/fonts/**/*', fonts);
     watch('./src/libs/**/*', libs);
