@@ -13,12 +13,12 @@
   &__input {
     margin-bottom: 8%;
     width: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 3% !important;
+    padding-bottom: 3% !important;
     &::placeholder {
       color: #6D6E71;
       font-family: GothamPro;
-      font-size: 18px;
+      font-size: 18px !important;
     }
   }
   &__container {

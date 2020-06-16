@@ -35,6 +35,9 @@ if (!empty($_POST)) {
             $name = $_POST['name'];
             $phone = $_POST['phone'];
             $what = $_POST['what'];
+            $price = $_POST['price'];
+            $mark = $_POST['mark'];
+
 
             $mail = new PHPMailer\PHPMailer\PHPMailer();
             try {
@@ -59,7 +62,9 @@ if (!empty($_POST)) {
                 $mail->Subject = 'Новая заявка на TrueAuto';
                 $mail->Body = "<b>Имя:</b> $name <br>
                 <b>Тел:</b> $phone<br>
-                <b>Что хотят:</b> $what";
+                <b>Что хотят:</b> $what <br>
+                <b>Марка автомобиля:</b> $mark <br>
+                <b>Стоимость до:</b> $price руб";
 
                 if ($mail->send()) {
 

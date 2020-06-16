@@ -30,12 +30,21 @@ $('form').submit(function () {
     let m = this.hasAttribute('message');
     let name = this.name.value;
     let number = this.telephone.value;
+    let mark = this.mark.value;
+    let price = this.price.value;
     let window_form = this.hasAttribute('modal');
     let what = this.what.value;
+    if (window_form == true) {
+        mark = 'Марка автомобиля не указана';
+        price = 'Стоимость до не указана';
+    }
     let data = {
         'name': name,
         'phone': number,
-        'what': what
+        'what': what,
+        'mark': mark,
+        'price': price
+
     };
     let request = new XMLHttpRequest();
     request.open('POST', '../php/mail.php');

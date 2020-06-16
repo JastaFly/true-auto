@@ -7,37 +7,13 @@
             </div>
             <div class="col-xl-2 col-lg-3 order-md-first order-first order-lg-last">
                 <form action="" onsubmit="what_fn(11, 1); return false;" class="footer-form">
-                    <input type="hidden" name="what">
+                    <input type="hidden" name="what" value="Рассчитать стоимость проверки и подбора авто">
                     <p class="footer-form__title">Калькулятор</p>
                     <p class="footer-form__text">Рассчитайте стоимость проверки и подбора авто</p>
-                    <div class="select-container">
-                        <select class="footer-form__input" name="mark">
-                            <option disabled selected>Марка</option>
-                            <option value="">BMW</option>
-                            <option value="">Жигули</option>
-                            <option value="">Opel</option>
-                            <option value="">Lamborghini</option>
-                        </select>
-                    </div>
-                    <div class="select-container">
-                        <select class="footer-form__input" name="model">
-                            <option disabled selected>Модель</option>
-                            <option value="">Девятка</option>
-                            <option value="">M6</option>
-                            <option value="">Гранта</option>
-                            <option value="">Приора</option>
-                        </select>
-                    </div>
-                    <div class="select-container">
-                        <select class="footer-form__input" name="manufacture">
-                            <option disabled selected>Год выпуска</option>
-                            <option value="">1994</option>
-                            <option value="">1995</option>
-                            <option value="">1996</option>
-                            <option value="">1997</option>
-                        </select>
-                    </div>
-                    <input type="tel" required class="footer-form__input" placeholder="Ваш телефон">
+                    <input name="mark" placeholder="Марка" place type="text" class="footer-form__input">
+                    <input name="name" placeholder="Имя" place type="text" class="footer-form__input">
+                    <input name="price" placeholder="Стоимость до" place type="text" class="footer-form__input">
+                    <input name="telephone" type="tel" required class="footer-form__input" placeholder="Ваш телефон">
                     <div class="footer-form__container">
                         <input type="submit" value="Заказать" class="footer-form__button">
                         <p class="footer-form__mini-text">нажимая на кнопку, вы даете согласие на обработку своих
